@@ -1,9 +1,9 @@
 ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
-def alphabetize(sentences_array)
-  sentences_array.sort_by do |sentence|
-    sentence.split("").map do |character|
-      ALPHABET.index(character)
+def alphabetize(sentences)
+  sentences.sort_by do |sentence|
+    sentence.split("").map do |letter|
+      ALPHABET.index(letter)
     end
   end
 end
